@@ -31,16 +31,21 @@ A web-based utility to help track player scores, hit points (HP), and game turns
 ### Easy: 
 Go to: [Odd Frontier Health Tracker](https://sunshine144.github.io/Odd-frontier-hp-tracker/)
 
-### Advanced
-1.  Clone this repository or download the files.
-2.  Open the `index.html` file in your web browser.
-3.  Enter the names for Player 1 and Player 2.
-4.  Use the HP controls to adjust hit points as the game progresses.
-5.  Click the "End Turn" button to advance to the next turn and log changes.
-6.  View the history section to see past HP modifications.
-7.  Use the "Print Scorecard" button to get a physical copy if needed.
+
+1.  Enter the names for Player 1 and Player 2.
+2. Use the HP controls to adjust hit points as the game progresses.
+3.  Click the "End Turn" button to advance to the next turn and log changes.
+4.  View the history section to see past HP modifications.
+5.  Use the "Print Scorecard" button to get a physical copy if needed.
 
 ## Screenshot
 
-*(It's highly recommended to add a screenshot of your application here!)*
+This is what is looks like when you start the program
+
+![Odd Frontier Beginning](/.images/Game-Start.png)
+
+This shows the program after a few turns.
+
+![Odd Frontier continued](/.images/gameplayexample.png)
+
 
