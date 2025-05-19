@@ -1,6 +1,6 @@
 # Odd Frontier Scorecard
 
-A web-based utility to help track player scores, hit points (HP), and game turns for the "Odd Frontier" game (or any similar tabletop/role-playing game). This tool provides a clean interface for managing player stats and viewing game history.
+A web-based utility to help track player scores, hit points (HP), and game turns for the "Odd Frontier" trading card game. This tool provides a clean interface for managing player stats and viewing game history.
 
 ## Features
 
