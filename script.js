@@ -11,12 +11,28 @@ const endTurnButton = document.getElementById('end-turn-button');
 const printButton = document.getElementById('print-button');
 const turnCounterSpan = document.getElementById('turn-counter');
 
+// Function to get player names on load
+function getPlayerNames() {
+    const name1 = prompt("Enter the name for Player 1:", "Player 1");
+    if (name1) {
+        player1NameInput.value = name1;
+        player1HistoryTitle.textContent = `${name1} History`;
+    }
+
+    const name2 = prompt("Enter the name for Player 2:", "Player 2");
+    if (name2) {
+        player2NameInput.value = name2;
+        player2HistoryTitle.textContent = `${name2} History`;
+    }
+}
+
+// Call getPlayerNames when the page loads
+window.onload = getPlayerNames;
+
 function updatePlayerNames() {
     player1HistoryTitle.textContent = `${player1NameInput.value} History`;
     player2HistoryTitle.textContent = `${player2NameInput.value} History`;
 }
-
-updatePlayerNames();
 
 player1NameInput.addEventListener('input', updatePlayerNames);
 player2NameInput.addEventListener('input', updatePlayerNames);
@@ -91,10 +107,7 @@ function printPage() {
     window.print();
 }
 
-// Always ask beforeunload
 window.addEventListener('beforeunload', (event) => {
-    // Cancel the event by returning a string value;
-    // This string will be displayed in the confirmation dialog.
     event.preventDefault();
     event.returnValue = 'Are you sure you want to leave? All activity will be lost.';
     return 'Are you sure you want to leave? All activity will be lost.';
