@@ -6,7 +6,13 @@ body {
     background-color: #f4f4f4;
     margin: 20px;
 }
-/* ... all your CSS rules from the previous <style> block ... */
+h1 {
+    font-family: 'Cinzel Decorative', serif; /* Sets the fancy font with a generic serif fallback */
+    text-align: center; /* Moved from inline style */
+    margin-bottom: 20px; /* Moved from inline style */
+}
+
+/* Add other styles below */
 .player-container {
     display: flex;
     justify-content: space-around;
