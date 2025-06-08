@@ -2,6 +2,10 @@
 
 A web-based utility to help track player scores, hit points (HP), and game turns for the "Odd Frontier" trading card game. This tool provides a clean interface for managing player stats and viewing game history.
 
+I built this to run from my tablet at the table while playing the game.  
+
+(*I did have some AI assistance in writing some of the code.*)
+
 ## Features
 
 *   **Player Management:**
@@ -38,6 +42,11 @@ Go to: [Odd Frontier Health Tracker](https://sunshine144.github.io/Odd-frontier-
 4.  View the history section to see past HP modifications.
 5.  Use the "Print Scorecard" button to get a physical copy if needed.
 
+## Make Your Own or Run Locally
+1. Download the script.js, style.css, and index.html in the same folder and run the index.html in your browser.
+2. Load them on your website and have fun.
+3. Duplicate it here on github and make a free gihub site with it.  (that's what I have done here)
+
 ## Screenshot
 
 This is what is looks like when you start the program
@@ -47,5 +56,8 @@ This is what is looks like when you start the program
 This shows the program after a few turns.
 
 ![Odd Frontier continued](/.images/gameplayexample.png)
+
+
+
 
 
