@@ -1,5 +1,5 @@
-let player1HP = 137;
-let player2HP = 137;
+let player1HP;
+let player2HP;
 let turnNumber = 1;
 const historyPlayer1Div = document.getElementById('history-player1');
 const historyPlayer2Div = document.getElementById('history-player2');
@@ -10,6 +10,8 @@ const player2HistoryTitle = document.getElementById('player2-history-title');
 const endTurnButton = document.getElementById('end-turn-button');
 const printButton = document.getElementById('print-button');
 const turnCounterSpan = document.getElementById('turn-counter');
+const hpPlayer1Display = document.getElementById('hp-player1');
+const hpPlayer2Display = document.getElementById('hp-player2');
 
 // Function to get player names on load
 function getPlayerNames() {
@@ -24,6 +26,16 @@ function getPlayerNames() {
         player2NameInput.value = name2;
         player2HistoryTitle.textContent = `${name2} History`;
     }
+
+    const startingHPInput = prompt("Enter starting HP for both players:", "137");
+    const startingHP = parseInt(startingHPInput);
+
+    if (!isNaN(startingHP) && startingHP > 0) {
+        player1HP = startingHP;
+        player2HP = startingHP;
+        hpPlayer1Display.textContent = player1HP;
+        hpPlayer2Display.textContent = player2HP;
+    } // If invalid or cancelled, HP will remain undefined until first add/minus or will use HTML default if not cleared
 }
 
 // Call getPlayerNames when the page loads
