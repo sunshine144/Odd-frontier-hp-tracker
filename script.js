@@ -40,7 +40,7 @@ player2NameInput.addEventListener('input', updatePlayerNames);
 function addPoints(player) {
     const addInput = document.getElementById(`add-${player}`);
     const hpDisplay = document.getElementById(`hp-${player}`);
-    const pointsToAdd = parseInt(addInput.value) || 0;
+    const pointsToAdd = Math.abs(parseInt(addInput.value) || 0);
     const historyDiv = (player === 'player1') ? historyPlayer1Div : historyPlayer2Div;
     const playerName = (player === 'player1') ? player1NameInput.value : player2NameInput.value;
 
@@ -64,7 +64,7 @@ function addPoints(player) {
 function minusPoints(player) {
     const minusInput = document.getElementById(`minus-${player}`);
     const hpDisplay = document.getElementById(`hp-${player}`);
-    const pointsToMinus = parseInt(minusInput.value) || 0;
+    const pointsToMinus = Math.abs(parseInt(minusInput.value) || 0);
     const historyDiv = (player === 'player1') ? historyPlayer1Div : historyPlayer2Div;
     const playerName = (player === 'player1') ? player1NameInput.value : player2NameInput.value;
 
