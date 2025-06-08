@@ -52,10 +52,11 @@ function addPoints(player) {
 
         if (player === 'player1') {
             player1HP += pointsToAdd;
+            hpDisplay.textContent = player1HP;
         } else {
             player2HP += pointsToAdd;
+            hpDisplay.textContent = player2HP;
         }
-        hpDisplay.textContent = player1HP;
         addInput.value = '';
     }
 }
@@ -75,10 +76,11 @@ function minusPoints(player) {
 
         if (player === 'player1') {
             player1HP -= pointsToMinus;
+            hpDisplay.textContent = player1HP;
         } else {
             player2HP -= pointsToMinus;
+            hpDisplay.textContent = player2HP;
         }
-        hpDisplay.textContent = player1HP;
         minusInput.value = '';
     }
 }
